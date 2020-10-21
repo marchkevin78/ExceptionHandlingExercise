@@ -37,6 +37,10 @@ namespace ExceptionHandlingExercise
                 {
                     Console.WriteLine($"Unable to Parse '{item}'");
                 }
+                finally
+                {
+                    Console.WriteLine(item);
+                }
             }
 
             foreach (var num in numbers)
